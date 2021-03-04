@@ -76,6 +76,13 @@
 /* Table */
 
 /* Headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #425563;
+}
 
 /* Font */
 @import url("fonts/IstokWeb-Regular.ttf");
@@ -89,19 +96,15 @@
 }
 
 .text-center {
+  text-align: left;
+}
+
+.text-center {
   text-align: center;
 }
 
 .text-right {
   text-align: end;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: #425563;
 }
 
 hr {

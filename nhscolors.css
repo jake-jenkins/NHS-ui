@@ -77,3 +77,19 @@
 .bg-grey-5 {
   background-color: #425563;
 }
+
+.text-blue {
+  color: #005eb8;
+}
+
+.text-grey {
+  color: #425563;
+}
+
+.text-green {
+  color: #009639;
+}
+
+.text-red {
+  color: #da291c;
+}
