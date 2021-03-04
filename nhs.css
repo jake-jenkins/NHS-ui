@@ -106,6 +106,10 @@ h5 {
   color: #425563;
 }
 
+h1 {
+  margin: 0.2em 0;
+}
+
 .text-xl {
   font-size: xx-large;
 }
@@ -196,4 +200,13 @@ input {
   font-size: 1rem;
   border-radius: 5pt;
   border-style: none;
+}
+
+/* Overide blue link in Nav */
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #fbe733;
 }
