@@ -4,7 +4,8 @@
   display: flex;
 }
 
-.container {
+.container,
+.main {
   max-width: 1500px;
   margin: auto;
   padding: 20px;
@@ -12,6 +13,10 @@
 
 .block {
   width: 100%;
+}
+
+.padding {
+  padding: 10px;
 }
 
 .banner {
@@ -22,6 +27,11 @@
 main {
   min-height: Calc(100vh - 250px);
   padding: 20px;
+}
+
+div.block.logo > a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer,
@@ -50,12 +60,13 @@ footer {
 /* Button */
 
 .button-sm {
-  padding: 8px 16px 8px 16px;
+  padding: 6px 14px 6px 14px;
   color: white;
   background: #005eb8;
   text-decoration: none;
   border-radius: 5pt 10pt 5pt 10pt;
   display: inline-block;
+  font-size: 0.9rem;
 }
 
 .button {
