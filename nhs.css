@@ -108,6 +108,39 @@ footer {
 
 /* Table */
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-width: 1px;
+  border-color: #425563;
+  border-bottom-style: solid;
+}
+
+td,
+th {
+  padding: 12px;
+}
+
+tr:nth-child(even) {
+  background-color: #e8edee;
+}
+
+tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+tr:hover {
+  background-color: #d8f0fc;
+}
+
+th {
+  padding-top: 16px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #425563;
+  color: white;
+}
+
 /* Headings */
 h1,
 h2,
@@ -161,7 +194,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
-  margin: 40px;
+  margin: 80px;
   padding: 0;
 }
 

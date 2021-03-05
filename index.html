@@ -20,13 +20,14 @@
     }
 
     .code {
-        padding: 20px;
+        padding: 20px 20px 20px 40px;
         font-family:'Courier New', Courier, monospace;
-        background: #28333b;
+        background: #ecebeb;
         border-radius: 5pt;
-        color: #eceeef;
-        max-height: 300px;
+        color: #000;
+        max-height: 200px;
         overflow: auto;
+        font-size: 0.9rem;
     }
 
 h2 {
@@ -80,10 +81,10 @@ h2 {
         <div>&lt;meta charset="UTF-8"&gt;</div>
         <div>&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;</div>
         <div>&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;</div>
-        <div>&lt;link rel="stylesheet"href="/resets.css"&gt;</div>
-        <div>&lt;link rel="stylesheet"href="/icons/css/all.min.css"&gt;</div>
-        <div>&lt;link rel="stylesheet"href="/nhs.css"&gt;</div>
-        <div>&lt;link rel="stylesheet"href="/nhscolors.css"&gt;</div>
+        <div>&lt;link rel="stylesheet"href="https://nhs-ui.pages.dev/resets.css"&gt;</div>
+        <div>&lt;link rel="stylesheet"href="https://nhs-ui.pages.dev/icons/css/all.min.css"&gt;</div>
+        <div>&lt;link rel="stylesheet"href="https://nhs-ui.pages.dev/nhs.css"&gt;</div>
+        <div>&lt;link rel="stylesheet"href="https://nhs-ui.pages.dev/nhscolors.css"&gt;</div>
         <div>&lt;title&gt;Home - SystemName&lt;/title&gt;</div>
         <div>&lt;/head&gt;</div>
         <div>&lt;body&gt;</div>
@@ -178,9 +179,6 @@ h2 {
 <h3>Menus</h3>
 <p>x</p>
 <hr>
-<h3>Modal / Popup</h3>
-<p>x</p>
-<hr>
 
 <h2>Buttons</h2>
 <p>There are three button sizes.  The default colour is blue, but this can be changed with a bg-color class.</p>
@@ -233,6 +231,64 @@ h2 {
 <hr>
 <h2>Tables</h2>
 
+<table>
+    <tr>
+      <th>Patient</th>
+      <th>Consultant</th>
+      <th>Ward</th>
+    </tr>
+    <tr>
+      <td>Amos Bains</td>
+      <td>Maria Anders</td>
+      <td>e7</td>
+    </tr>
+    <tr>
+      <td>Ridwan Randall</td>
+      <td>Francisco Chang</td>
+      <td>e4</td>
+    </tr>
+    <tr>
+      <td>Adaline Wardle</td>
+      <td>Roland Mendel</td>
+      <td>w6</td>
+    </tr>
+  </table>
+
+  <p>Tables are styled by default.</p>
+  <p>You can add bg- classes to the &lt;th&gt; tag.</p>
+
+  <div class="code">
+    <div>
+        <div>&lt;table&gt;</div>
+        <div>&lt;tr&gt;</div>
+        <div>&lt;th class="bg-green-5"&gt;Patient&lt;/th&gt;</div>
+        <div>&lt;th class="bg-green-5"&gt;Consultant&lt;/th&gt;</div>
+        <div>&lt;th class="bg-green-5"&gt;Ward&lt;/th&gt;</div>
+        <div>&lt;/tr&gt;</div>
+        <div>&lt;tr&gt;</div>
+        <div>&lt;td&gt;Amos Bains&lt;/td&gt;</div>
+        <div>&lt;td&gt;Maria Anders&lt;/td&gt;</div>
+        <div>&lt;td&gt;e7&lt;/td&gt;</div>
+        <div>&lt;/tr&gt;</div>
+        <div>&lt;tr&gt;</div>
+        <div>&lt;td&gt;Ridwan Randall&lt;/td&gt;</div>
+        <div>&lt;td&gt;Francisco Chang&lt;/td&gt;</div>
+        <div>&lt;td&gt;e4&lt;/td&gt;</div>
+        <div>&lt;/tr&gt;</div>
+        <div>&lt;tr&gt;</div>
+        <div>&lt;td&gt;Adaline Wardle&lt;/td&gt;</div>
+        <div>&lt;td&gt;Roland Mendel&lt;/td&gt;</div>
+        <div>&lt;td&gt;w6&lt;/td&gt;</div>
+        <div>&lt;/tr&gt;</div>
+        <div>&lt;tr&gt;</div>
+        <div>&lt;td&gt;Jon Dowling&lt;/td&gt;</div>
+        <div>&lt;td&gt;Francisco Chang&lt;/td&gt;</div>
+        <div>&lt;td&gt;e7&lt;/td&gt;</div>
+        <div>&lt;/tr&gt;</div>
+        <div>&lt;/table&gt;</div>
+        </div>
+  </div>
+<hr>
 <h2>Text</h2>
 <h3>Headings</h3>
 <p>Text colours and alignment can be applied to headings.</p>
