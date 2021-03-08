@@ -1,0 +1,23 @@
+{
+  "name": "nhs-ui",
+  "version": "1.0.0",
+  "description": "A Simple, consistant front-end framework",
+  "main": "index.html",
+  "scripts": {
+    "build": "postcss css/combined.css -o nhs.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnx-uk/NHS-ui.git"
+  },
+  "author": "Jake Jenkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnx-uk/NHS-ui/issues"
+  },
+  "homepage": "https://github.com/jnx-uk/NHS-ui#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss-cli": "^8.3.1"
+  }
+}
