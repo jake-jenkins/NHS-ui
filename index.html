@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/prism.css">
     <link rel="stylesheet"href="/nhs.css">
 <style>
     .colour {
@@ -16,16 +17,10 @@
         border-radius: 5pt 10pt 5pt 10pt;
     }
 
-    .code {
-        padding: 20px 20px 20px 30px;
-        font-family:'Courier New', Courier, monospace;
-        background: #ecebeb;
+    pre {
         border-radius: 5pt;
-        color: #000;
         max-height: 600px;
         overflow: auto;
-        font-size: 0.9rem;
-        margin: 80px;
     }
 
 h2 {
@@ -34,7 +29,7 @@ h2 {
 </style>
     <title>NHS-ui</title>
 </head>
-<body>
+<body class="line-numbers">
     
     <header class="bg-blue-4 text-white">
         <div class="container flex">
@@ -69,66 +64,64 @@ h2 {
     </ul>
 </div>
 
+
 <h2>Bolier Plate</h2>
 <p>Start with this.  The Boiler plate is the layout for your page.</p>
-<div class="code">
-    <div>
-        <div>&lt;!DOCTYPE html&gt;</div>
-        <div>&lt;html lang="en"&gt;</div>
-        <div>&lt;head&gt;</div>
-        <div>&lt;meta charset="UTF-8"&gt;</div>
-        <div>&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;</div>
-        <div>&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;</div>
-        <div>&lt;link rel="stylesheet"href="https://nhs-ui.pages.dev/nhs.css"&gt;</div>
-        <div>&lt;title&gt;Home - <span class="text-red">SystemName</span>&lt;/title&gt;</div>
-        <div>&lt;/head&gt;</div>
-        <div>&lt;body&gt;</div>
-        <div>&nbsp;</div>
-        <div>&lt;header class="bg-blue-4 text-white"&gt;</div>
-        <div>&lt;div class="container flex"&gt;</div>
-        <div>&lt;div class="block logo"&gt;</div>
-        <div>&nbsp;</div>
-        <div>&lt;img src="nhswales-gold.png"alt="SystemName Logo"&gt;</div>
-        <div>&lt;a href="/"&gt;<span class="text-red">SystemName</span>&lt;/a&gt;</div>
-        <div>&lt;/div&gt;</div>
-        <div>&nbsp;</div>
-        <div>&lt;div class="block search"&gt;</div>
-        <div>&lt;input type="search"&gt;</div>
-        <div>&lt;a class="button"type="submit"value="Search"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/a&gt;</div>
-        <div>&lt;/div&gt;</div>
-        <br />
-        <div>&lt;nav class="block text-right text-middle"&gt;</div>
-        <div>&lt;a href="/"&gt;&lt;i class="fas fa-home"&gt;&lt;/i&gt;&lt;/a&gt;</div>
-        <div>&lt;a href="/settings"&gt;&lt;i class="fas fa-cog"&gt;&lt;/i&gt;&lt;/a&gt;</div>
-        <div>&lt;a href="/logout"&gt;&lt;i class="fas fa-sign-out-alt"&gt;&lt;/i&gt;&lt;/a&gt;</div>
-        <div>&lt;/nav&gt;</div>
-        <div>&lt;/div&gt;</div>
-        <div>&lt;/header&gt;</div>
-        <br />
-        <div>&lt;main&gt;</div>
-        <div>&lt;h1 class="text-blue"&gt;Title&lt;/h1&gt;</div>
-        <div>&lt;p&gt;Main content area&lt;/p&gt;</div>
-        <div>&lt;/main&gt;</div>
-        <br />
-        <div>&lt;footer class="bg-grey-1 text-center"&gt;</div>
-        <div>&lt;a href="/"&gt;<span class="text-red">SystemName</span>&lt;/a&gt; - <span class="text-red">Footer text</span></div>
-        <div>&lt;/footer&gt;</div>
-        <br />
-        <div>&lt;/body&gt;</div>
-        <div>&lt;/html&gt;</div>
-        </div>
-</div>
+
+<pre><code class="language-html"><div>&lt;!DOCTYPE html&gt;</div>
+<div>&lt;html lang="en"&gt;</div>
+<div>&lt;head&gt;</div>
+<div>&lt;meta charset="UTF-8"&gt;</div>
+<div>&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;</div>
+<div>&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;</div>
+<div>&lt;link rel="stylesheet"href="https://nhs-ui.pages.dev/nhs.css"&gt;</div>
+<div>&lt;title&gt;Home - SystemName&lt;/title&gt;</div>
+<div>&lt;/head&gt;</div>
+<div>&lt;body&gt;</div>
+<div>&nbsp;</div>
+<div>&lt;header class="bg-blue-4 text-white"&gt;</div>
+<div>&lt;div class="container flex"&gt;</div>
+<div>&lt;div class="block logo"&gt;</div>
+<div>&nbsp;</div>
+<div>&lt;img src="nhswales-gold.png"alt="SystemName Logo"&gt;</div>
+<div>&lt;a href="/"&gt;SystemName&lt;/a&gt;</div>
+<div>&lt;/div&gt;</div>
+<div>&nbsp;</div>
+<div>&lt;div class="block search"&gt;</div>
+<div>&lt;input type="search"&gt;</div>
+<div>&lt;a class="button"type="submit"value="Search"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/a&gt;</div>
+<div>&lt;/div&gt;</div>
+<br />
+<div>&lt;nav class="block text-right text-middle"&gt;</div>
+<div>&lt;a href="/"&gt;&lt;i class="fas fa-home"&gt;&lt;/i&gt;&lt;/a&gt;</div>
+<div>&lt;a href="/settings"&gt;&lt;i class="fas fa-cog"&gt;&lt;/i&gt;&lt;/a&gt;</div>
+<div>&lt;a href="/logout"&gt;&lt;i class="fas fa-sign-out-alt"&gt;&lt;/i&gt;&lt;/a&gt;</div>
+<div>&lt;/nav&gt;</div>
+<div>&lt;/div&gt;</div>
+<div>&lt;/header&gt;</div>
+<br />
+<div>&lt;main&gt;</div>
+<div>&lt;h1 class="text-blue"&gt;Title&lt;/h1&gt;</div>
+<div>&lt;p&gt;Main content area&lt;/p&gt;</div>
+<div>&lt;/main&gt;</div>
+<br />
+<div>&lt;footer class="bg-grey-1 text-center"&gt;</div>
+<div>&lt;a href="/"&gt;SystemName&lt;/a&gt; - Footer text</div>
+<div>&lt;/footer&gt;</div>
+<br />
+<div>&lt;/body&gt;</div>
+<div>&lt;/html&gt;</div>
+</code></pre>
 
 <h2>Layout</h2>
 <h3>Container</h3>
 <div class="container bg-blue-1"> Max width, centered on page</div>
 <p>A conatiner has a max-width of x and is centered on the page.  You only need to use this to stop content filling the screen width.</p>
 <p>If you are using the boiler plate you shouldn't need to add any additional containers.</p>
-<div class="code">
-    <div>&lt;div class="container"&gt;</div>
+<pre><code class="language-html"><div>&lt;div class="container"&gt;</div>
 <div>...</div>
 <div>&lt;/div&gt;</div>
-</div>
+</code></pre>
 <hr>
 
 <h3>Block</h3>
@@ -139,28 +132,13 @@ h2 {
 </div>
 <p>A block sits inside container to create spaces for content.</p>
 <p>
-    <span class="tag bg-green-5">Tip</span>Use flex to make the blocks fit into a single row.</p>
-<div class="code">
-    <div>&lt;div class="container <span style="color: #ff0000;">flex</span>"&gt;</div>
-    <div>&nbsp;</div>
-    <div>&lt;div class="block"&gt;</div>
-    <div><span style="color: #ff0000;">Block 1</span></div>
-    <div>&lt;/div&gt;</div>
-    <div>&nbsp;</div>
-    <div>
-    <div>&lt;div class="block"&gt;</div>
-    <div><span style="color: #ff0000;">Block 2</span></div>
-    <div>&lt;/div&gt;</div>
-    <div>&nbsp;</div>
-    <div>
-    <div>&lt;div class="block"&gt;</div>
-    <div><span style="color: #ff0000;">Block 3</span></div>
-    <div>&lt;/div&gt;</div>
-    </div>
-    </div>
-    <div>&nbsp;</div>
-    <div>&lt;/div&gt;</div>
-</div>
+    <span class="tags bg-green-5">Tip</span>Use flex to make the blocks fit into a single row.</p>
+    <pre><code class="language-html"><p>&lt;div class="container flex"&gt;</p>
+    <p>&lt;div class="block"&gt;<br />Block 1<br />&lt;/div&gt;</p>
+    <p>&lt;div class="block"&gt;<br />Block 2<br />&lt;/div&gt;</p>
+    <p>&lt;div class="block"&gt;<br />Block 3<br />&lt;/div&gt;</p>
+<p><br />&lt;/div&gt;</p>
+</code></pre>
 <hr>
 
     <h2>Box</h2>
@@ -170,23 +148,17 @@ h2 {
                 Box Text
                 </p>
         </div>
-        <div class="code">
-            <div>&lt;div class="box bg-blue-1"&gt;</div>
-<div>&lt;header class="bg-blue-5 text-white"&gt;</div>
-<div><span style="color: #ff0000;">Box Title</span></div>
-<div>&lt;/header&gt;</div>
-<div>&lt;p&gt;</div>
-<div><span style="color: #ff0000;">Box Text</span></div>
-<div>&lt;/p&gt;</div>
-<div>&lt;/div&gt;</div>
-        </div>
+        <pre><code class="language-html">&lt;div class="box bg-blue-1"&gt;</p>
+    <p>&lt;header class="bg-blue-5 text-white"&gt;<br />Box Title<br />&lt;/header&gt;</p>
+        <p>&lt;p&gt;<br />Box Text<br />&lt;/p&gt;</p>
+<br />&lt;/div&gt;        </code></pre>
         <hr>
 <h3>Menus</h3>
 <p>x</p>
 <hr>
 
 <h2>Buttons</h2>
-<p>There are three button sizes.  The default colour is blue, but this can be changed with a bg-color class.</p>
+<p>There are three button sizes.</p>  <p><span class="tags bg-green-5">Tip</span>The default colour is blue, but this can be changed with a bg-color class.</p>
         <a href="/" class="button-sm">button-sm</a>
         <a href="/" class="button bg-blue-5">button</a>
         <a href="/" class="button-md bg-blue-5">button-md</a>
@@ -262,8 +234,7 @@ h2 {
   <p>Tables are styled by default.</p>
   <p>You can add bg- classes to the &lt;th&gt; tag.</p>
 
-  <div class="code">
-    <div>&lt;table&gt;</div>
+  <pre><code class="language-html"><div>&lt;table&gt;</div>
 <div>&lt;tr&gt;</div>
 <div>&lt;th class="<span style="color: #ff0000;">bg-green-5</span>"&gt;Patient&lt;/th&gt;</div>
 <div>&lt;th class="<span style="color: #ff0000;">bg-green-5</span>"&gt;Consultant&lt;/th&gt;</div>
@@ -289,8 +260,7 @@ h2 {
 <div>&lt;td&gt;Francisco Chang&lt;/td&gt;</div>
 <div>&lt;td&gt;e7&lt;/td&gt;</div>
 <div>&lt;/tr&gt;</div>
-<div>&lt;/table&gt;</div>
-  </div>
+<div>&lt;/table&gt;</div></code></pre>
 <hr>
 <h2>Text</h2>
 <h3>Headings</h3>
@@ -299,26 +269,21 @@ h2 {
 <h2 style="margin-top: 0px;">H2 Heading</h2>
 <h3>H3 Heading</h3>
 <h4>H4 Heading</h4>
-<div class="code">
-    <div>
-        <div>&lt;h1&gt;H1 Heading&lt;/h1&gt;</div>
-        <div>&lt;h2&gt;H2 Heading&lt;/h2&gt;</div>
-        <div>&lt;h3&gt;H3 Heading&lt;/h3&gt;</div>
-        <div>&lt;h4&gt;H4 Heading&lt;/h4&gt;</div>
-        </div>
-</div>
+<pre><code class="language-html"><div>&lt;h1&gt;H1 Heading&lt;/h1&gt;</div>
+<div>&lt;h2&gt;H2 Heading&lt;/h2&gt;</div>
+<div>&lt;h3&gt;H3 Heading&lt;/h3&gt;</div>
+<div>&lt;h4&gt;H4 Heading&lt;/h4&gt;</div>
+</code></pre>
+
 <hr>
 <h3>Text Alignment</h3>
 <p>text-left</p>
 <p class="text-center">text-center</p>
 <p class="text-right">text-right</p>
-<div class="code">
-    <div>
-        <div>&lt;p&gt;text-left&lt;/p&gt;</div>
-        <div>&lt;p class="text-center"&gt;text-center&lt;/p&gt;</div>
-        <div>&lt;p class="text-right"&gt;text-right&lt;/p&gt;</div>
-        </div>
-</div>
+<pre><code class="language-html"><div>&lt;p&gt;text-left&lt;/p&gt;</div>
+<div>&lt;p class="text-center"&gt;text-center&lt;/p&gt;</div>
+<div>&lt;p class="text-right"&gt;text-right&lt;/p&gt;</div>
+</code></pre>
 <hr>
 <h3>Text Colours</h3>
 <p class="text-blue">text-blue</p>
@@ -327,16 +292,13 @@ h2 {
 <p class="text-red">text-red</p>
 <p>text-white</p>
 <p>text-black</p>
-<div class="code">
-    <div>
-        <div>&lt;p class="text-blue"&gt;text-blue&lt;/p&gt;</div>
-        <div>&lt;p class="text-grey"&gt;text-grey&lt;/p&gt;</div>
-        <div>&lt;p class="text-green"&gt;text-green&lt;/p&gt;</div>
-        <div>&lt;p class="text-red"&gt;text-red&lt;/p&gt;</div>
-        <div>&lt;p class="text-white"&gt;text-white&lt;/p&gt;</div>
-        <div>&lt;p class="text-black"&gt;text-black&lt;/p&gt;</div>
-        </div>
-</div>
+<pre><code class="language-html"><div>&lt;p class="text-blue"&gt;text-blue&lt;/p&gt;</div>
+<div>&lt;p class="text-grey"&gt;text-grey&lt;/p&gt;</div>
+<div>&lt;p class="text-green"&gt;text-green&lt;/p&gt;</div>
+<div>&lt;p class="text-red"&gt;text-red&lt;/p&gt;</div>
+<div>&lt;p class="text-white"&gt;text-white&lt;/p&gt;</div>
+<div>&lt;p class="text-black"&gt;text-black&lt;/p&gt;</div>
+</code></pre>
 <hr>
 
 <h2>Alerts</h2>
@@ -345,45 +307,36 @@ h2 {
 <div class="box bg-yellow-5"><p>
     Please complete all feilds
 </p></div>
-<div class="code">
-    <div>
-        <div>&lt;div class="box bg-yellow-5"&gt;&lt;p&gt;</div>
-        <div><span style="color: #ff0000;">Please complete all feilds</span></div>
-        <div>&lt;/p&gt;&lt;/div&gt;</div>
-        </div>
-</div>
+<pre><code class="language-html"><div>&lt;div class="box bg-yellow-5"&gt;&lt;p&gt;</div>
+<div><span style="color: #ff0000;">Please complete all feilds</span></div>
+<div>&lt;/p&gt;&lt;/div&gt;</div>
+</code></pre>
 
 <h3>Error or Important Message</h3>
 <div class="box bg-red-5 text-white"><p>
     Record deleted
 </p></div>
 
-<div class="code">
-    <div>
-        <div>&lt;div class="box bg-red-5 text-white"&gt;&lt;p&gt;</div>
-        <div><span style="color: #ff0000;">Record deleted</span></div>
-        <div>&lt;/p&gt;&lt;/div&gt;</div>
-        </div>
-</div>
+<pre><code class="language-html"><div>&lt;div class="box bg-red-5 text-white"&gt;&lt;p&gt;</div>
+<div><span style="color: #ff0000;">Record deleted</span></div>
+<div>&lt;/p&gt;&lt;/div&gt;</div>
+</code></pre>
 
 <hr>
 
 <h2>Tags</h2>
-<span class="tag">Tag</span>
-<span class="tag bg-grey-5 text-white">Tag</span>
-<span class="tag bg-green-5 text-white">Tag</span>
-<span class="tag bg-red-5 text-white">Tag</span>
-<span class="tag bg-yellow-5 text-black">Tag</span>
+<span class="tags">Tag</span>
+<span class="tags bg-grey-5 text-white">Tag</span>
+<span class="tags bg-green-5 text-white">Tag</span>
+<span class="tags bg-red-5 text-white">Tag</span>
+<span class="tags bg-yellow-5 text-black">Tag</span>
 <p>A Tag is used to highlight a small bit of text, such as a category;</p>
-<div class="code">
-    <div>
-        <div>&lt;span class="tag"&gt;Tag&lt;/span&gt;</div>
-        <div>&lt;span class="tag bg-grey-5"&gt;Tag&lt;/span&gt;</div>
-        <div>&lt;span class="tag bg-green-5"&gt;Tag&lt;/span&gt;</div>
-        <div>&lt;span class="tag bg-red-5"&gt;Tag&lt;/span&gt;</div>
-        <div>&lt;span class="tag bg-yellow-5 text-black"&gt;Tag&lt;/span&gt;</div>
-        </div>
-</div>
+<pre><code class="language-html"><div>&lt;span class="tags"&gt;Tag&lt;/span&gt;</div>
+<div>&lt;span class="tags bg-grey-5"&gt;Tag&lt;/span&gt;</div>
+<div>&lt;span class="tags bg-green-5"&gt;Tag&lt;/span&gt;</div>
+<div>&lt;span class="tags bg-red-5"&gt;Tag&lt;/span&gt;</div>
+<div>&lt;span class="tags bg-yellow-5 text-black"&gt;Tag&lt;/span&gt;</div>
+</code></pre>
 <hr>
 
 <h2>Lists</h2>
@@ -408,6 +361,6 @@ Built for Aneurin Bevan University Health Board, Designed by <a href="https://ja
 </div>
 
 
-
+<script src="/public/js/prism.js"></script>
 </body>
 </html>
