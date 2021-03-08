@@ -147,25 +147,25 @@ h2 {
 <p>
     Use flex to make the blocks fit into a single row.</p>
 <div class="code">
-    <div>&lt;div class="container flex"&gt;</div>
-<div>&nbsp;</div>
-<div>&lt;div class="block"&gt;</div>
-<div>Block 1</div>
-<div>&lt;/div&gt;</div>
-<div>&nbsp;</div>
-<div>
-<div>&lt;div class="block"&gt;</div>
-<div>Block 2</div>
-<div>&lt;/div&gt;</div>
-<div>&nbsp;</div>
-<div>
-<div>&lt;div class="block"&gt;</div>
-<div>Block 3</div>
-<div>&lt;/div&gt;</div>
-</div>
-</div>
-<div>&nbsp;</div>
-<div>&lt;/div&gt;</div>
+    <div>&lt;div class="container <span style="color: #ff0000;">flex</span>"&gt;</div>
+    <div>&nbsp;</div>
+    <div>&lt;div class="block"&gt;</div>
+    <div><span style="color: #ff0000;">Block 1</span></div>
+    <div>&lt;/div&gt;</div>
+    <div>&nbsp;</div>
+    <div>
+    <div>&lt;div class="block"&gt;</div>
+    <div><span style="color: #ff0000;">Block 2</span></div>
+    <div>&lt;/div&gt;</div>
+    <div>&nbsp;</div>
+    <div>
+    <div>&lt;div class="block"&gt;</div>
+    <div><span style="color: #ff0000;">Block 3</span></div>
+    <div>&lt;/div&gt;</div>
+    </div>
+    </div>
+    <div>&nbsp;</div>
+    <div>&lt;/div&gt;</div>
 </div>
 <hr>
 
@@ -175,6 +175,16 @@ h2 {
                 <p>
                 Box Text
                 </p>
+        </div>
+        <div class="code">
+            <div>&lt;div class="box bg-blue-1"&gt;</div>
+<div>&lt;header class="bg-blue-5 text-white"&gt;</div>
+<div><span style="color: #ff0000;">Box Title</span></div>
+<div>&lt;/header&gt;</div>
+<div>&lt;p&gt;</div>
+<div><span style="color: #ff0000;">Box Text</span></div>
+<div>&lt;/p&gt;</div>
+<div>&lt;/div&gt;</div>
         </div>
         <hr>
 <h3>Menus</h3>
@@ -259,35 +269,33 @@ h2 {
   <p>You can add bg- classes to the &lt;th&gt; tag.</p>
 
   <div class="code">
-    <div>
-        <div>&lt;table&gt;</div>
-        <div>&lt;tr&gt;</div>
-        <div>&lt;th class="bg-green-5"&gt;Patient&lt;/th&gt;</div>
-        <div>&lt;th class="bg-green-5"&gt;Consultant&lt;/th&gt;</div>
-        <div>&lt;th class="bg-green-5"&gt;Ward&lt;/th&gt;</div>
-        <div>&lt;/tr&gt;</div>
-        <div>&lt;tr&gt;</div>
-        <div>&lt;td&gt;Amos Bains&lt;/td&gt;</div>
-        <div>&lt;td&gt;Maria Anders&lt;/td&gt;</div>
-        <div>&lt;td&gt;e7&lt;/td&gt;</div>
-        <div>&lt;/tr&gt;</div>
-        <div>&lt;tr&gt;</div>
-        <div>&lt;td&gt;Ridwan Randall&lt;/td&gt;</div>
-        <div>&lt;td&gt;Francisco Chang&lt;/td&gt;</div>
-        <div>&lt;td&gt;e4&lt;/td&gt;</div>
-        <div>&lt;/tr&gt;</div>
-        <div>&lt;tr&gt;</div>
-        <div>&lt;td&gt;Adaline Wardle&lt;/td&gt;</div>
-        <div>&lt;td&gt;Roland Mendel&lt;/td&gt;</div>
-        <div>&lt;td&gt;w6&lt;/td&gt;</div>
-        <div>&lt;/tr&gt;</div>
-        <div>&lt;tr&gt;</div>
-        <div>&lt;td&gt;Jon Dowling&lt;/td&gt;</div>
-        <div>&lt;td&gt;Francisco Chang&lt;/td&gt;</div>
-        <div>&lt;td&gt;e7&lt;/td&gt;</div>
-        <div>&lt;/tr&gt;</div>
-        <div>&lt;/table&gt;</div>
-        </div>
+    <div>&lt;table&gt;</div>
+<div>&lt;tr&gt;</div>
+<div>&lt;th class="<span style="color: #ff0000;">bg-green-5</span>"&gt;Patient&lt;/th&gt;</div>
+<div>&lt;th class="<span style="color: #ff0000;">bg-green-5</span>"&gt;Consultant&lt;/th&gt;</div>
+<div>&lt;th class="<span style="color: #ff0000;">bg-green-5</span>"&gt;Ward&lt;/th&gt;</div>
+<div>&lt;/tr&gt;</div>
+<div>&lt;tr&gt;</div>
+<div>&lt;td&gt;Amos Bains&lt;/td&gt;</div>
+<div>&lt;td&gt;Maria Anders&lt;/td&gt;</div>
+<div>&lt;td&gt;e7&lt;/td&gt;</div>
+<div>&lt;/tr&gt;</div>
+<div>&lt;tr&gt;</div>
+<div>&lt;td&gt;Ridwan Randall&lt;/td&gt;</div>
+<div>&lt;td&gt;Francisco Chang&lt;/td&gt;</div>
+<div>&lt;td&gt;e4&lt;/td&gt;</div>
+<div>&lt;/tr&gt;</div>
+<div>&lt;tr&gt;</div>
+<div>&lt;td&gt;Adaline Wardle&lt;/td&gt;</div>
+<div>&lt;td&gt;Roland Mendel&lt;/td&gt;</div>
+<div>&lt;td&gt;w6&lt;/td&gt;</div>
+<div>&lt;/tr&gt;</div>
+<div>&lt;tr&gt;</div>
+<div>&lt;td&gt;Jon Dowling&lt;/td&gt;</div>
+<div>&lt;td&gt;Francisco Chang&lt;/td&gt;</div>
+<div>&lt;td&gt;e7&lt;/td&gt;</div>
+<div>&lt;/tr&gt;</div>
+<div>&lt;/table&gt;</div>
   </div>
 <hr>
 <h2>Text</h2>
@@ -297,11 +305,26 @@ h2 {
 <h2 style="margin-top: 0px;">H2 Heading</h2>
 <h3>H3 Heading</h3>
 <h4>H4 Heading</h4>
+<div class="code">
+    <div>
+        <div>&lt;h1&gt;H1 Heading&lt;/h1&gt;</div>
+        <div>&lt;h2&gt;H2 Heading&lt;/h2&gt;</div>
+        <div>&lt;h3&gt;H3 Heading&lt;/h3&gt;</div>
+        <div>&lt;h4&gt;H4 Heading&lt;/h4&gt;</div>
+        </div>
+</div>
 <hr>
 <h3>Text Alignment</h3>
 <p>text-left</p>
-<p>text-center</p>
-<p>text-right</p>
+<p class="text-center">text-center</p>
+<p class="text-right">text-right</p>
+<div class="code">
+    <div>
+        <div>&lt;p&gt;text-left&lt;/p&gt;</div>
+        <div>&lt;p class="text-center"&gt;text-center&lt;/p&gt;</div>
+        <div>&lt;p class="text-right"&gt;text-right&lt;/p&gt;</div>
+        </div>
+</div>
 <hr>
 <h3>Text Colours</h3>
 <p class="text-blue">text-blue</p>
@@ -310,15 +333,74 @@ h2 {
 <p class="text-red">text-red</p>
 <p>text-white</p>
 <p>text-black</p>
+<div class="code">
+    <div>
+        <div>&lt;p class="text-blue"&gt;text-blue&lt;/p&gt;</div>
+        <div>&lt;p class="text-grey"&gt;text-grey&lt;/p&gt;</div>
+        <div>&lt;p class="text-green"&gt;text-green&lt;/p&gt;</div>
+        <div>&lt;p class="text-red"&gt;text-red&lt;/p&gt;</div>
+        <div>&lt;p class="text-white"&gt;text-white&lt;/p&gt;</div>
+        <div>&lt;p class="text-black"&gt;text-black&lt;/p&gt;</div>
+        </div>
+</div>
 <hr>
 
+<h2>Alerts</h2>
 
-<h2>Labels</h2>
-<p>x</p>
+<h3>Warning or Validation</h3>
+<div class="box bg-yellow-5"><p>
+    Please complete all feilds
+</p></div>
+<div class="code">
+    <div>
+        <div>&lt;div class="box bg-yellow-5"&gt;&lt;p&gt;</div>
+        <div><span style="color: #ff0000;">Please complete all feilds</span></div>
+        <div>&lt;/p&gt;&lt;/div&gt;</div>
+        </div>
+</div>
+
+<h3>Error or Important Message</h3>
+<div class="box bg-red-5 text-white"><p>
+    Record deleted
+</p></div>
+
+<div class="code">
+    <div>
+        <div>&lt;div class="box bg-red-5 text-white"&gt;&lt;p&gt;</div>
+        <div><span style="color: #ff0000;">Record deleted</span></div>
+        <div>&lt;/p&gt;&lt;/div&gt;</div>
+        </div>
+</div>
+
+<hr>
+
+<h2>Tags</h2>
+<span class="tag">Tag</span>
+<span class="tag bg-grey-5 text-white">Tag</span>
+<span class="tag bg-green-5 text-white">Tag</span>
+<span class="tag bg-red-5 text-white">Tag</span>
+<span class="tag bg-yellow-5 text-black">Tag</span>
+<p>A Tag is used to highlight a small bit of text, such as a category;</p>
+<div class="code">
+    <div>
+        <div>&lt;span class="tag"&gt;Tag&lt;/span&gt;</div>
+        <div>&lt;span class="tag bg-grey-5"&gt;Tag&lt;/span&gt;</div>
+        <div>&lt;span class="tag bg-green-5"&gt;Tag&lt;/span&gt;</div>
+        <div>&lt;span class="tag bg-red-5"&gt;Tag&lt;/span&gt;</div>
+        <div>&lt;span class="tag bg-yellow-5 text-black"&gt;Tag&lt;/span&gt;</div>
+        </div>
+</div>
 <hr>
 
 <h2>Lists</h2>
 <p>x</p>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
 <hr>
 
 <h2>Tooltips</h2>
