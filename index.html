@@ -27,7 +27,7 @@
         background: greenyellow;
         font-size: 1.2rem;
         padding: 10px;
-        border-radius: 0px;
+        border-radius: 5pt;
         margin-right: 20px;
         margin-top: 10px;
         box-shadow: none;
@@ -42,24 +42,101 @@
 h2 {
     margin-top: 50px;
 }
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.main1 {
+    margin-left: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}x
+  div.content {margin-left: 0;}
+  .main {
+    /* margin: 0px; */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+
+  .main {
+    /* margin: 0px; */
+  }
+}
 </style>
     <title>NHS-ui</title>
 </head>
 <body class="line-numbers">
-    
-    <header class="bg-blue-4 text-white">
+    <div class="sidebar">
+        <a href="#top">Top</a>
+        <a href="#boiler-plate">Get Started</a>
+        <a href="#container">Container</a>
+        <a href="#box">Box</a>
+        <a href="#menus">Menus</a>
+        <a href="#buttons">Buttons</a>
+        <a href="#colours">Colours</a>
+        <a href="#tables">Tables</a>
+        <a href="#text">Text</a>
+        <a href="#alerts">Alerts</a>
+        <a href="#tags">Tags</a>
+        <a href="#tabs">Tabs</a>
+        <a href="#lists">Lists</a>
+        <a href="#tooltips">Tooltips</a>
+      </div>
+<div class="main1">
+    <header id="top" class="bg-blue-4 text-white">
         <div class="container flex">
         <div class="block logo">
-         
+
         <img src="nhswales-gold.png"alt="SystemName Logo">
         <a href="/">NHS-ui</a>
         </div>
-         
+
         <div class="block search">
         <input type="search">
         <a class="button"type="submit"value="Search"><i class="fas fa-search"></i></a>
         </div>
-        
+
         <nav class="block text-right text-middle">
         A Simple, consistant front-end framework
         </nav>
@@ -81,7 +158,7 @@ h2 {
 </div>
 
 
-<h2>Bolier Plate</h2>
+<h2 id="boiler-plate">Get Started - Bolier Plate</h2>
 <p>Start with this.  The Boiler plate is the layout for your page.</p>
 
 <pre><code class="language-html"><div>&lt;!DOCTYPE html&gt;</div>
@@ -130,7 +207,7 @@ h2 {
 </code></pre>
 
 <h2>Layout</h2>
-<h3>Container</h3>
+<h3 id="container">Container</h3>
 <div class="container bg-blue-1"> Max width, centered on page</div>
 <p>A conatiner has a max-width of x and is centered on the page.  You only need to use this to stop content filling the screen width.</p>
 <p>If you are using the boiler plate you shouldn't need to add any additional containers.</p>
@@ -140,7 +217,7 @@ h2 {
 </code></pre>
 <hr>
 
-<h3>Block</h3>
+<h3 id="block">Block</h3>
 <div class="flex">
 <div class="block padding bg-yellow-2 text-center text-lg">Block 1</div>
 <div class="block padding bg-green-2 text-center text-lg">Block 2</div>
@@ -157,7 +234,7 @@ h2 {
 </code></pre>
 <hr>
 
-    <h2>Box</h2>
+    <h2 id="box">Box</h2>
         <div class="box bg-blue-1">
             <header class="bg-blue-5 text-white">Box Title</header>
                 <p>
@@ -169,18 +246,18 @@ h2 {
         <p>&lt;p&gt;<br />Box Text<br />&lt;/p&gt;</p>
 <br />&lt;/div&gt;        </code></pre>
         <hr>
-<h3>Menus</h3>
+<h3 id="menus">Menus</h3>
 <p>x</p>
 <hr>
 
-<h2>Buttons</h2>
+<h2 id="buttons">Buttons</h2>
 <p>There are three button sizes.</p>  <p><span class="tags bg-green-5">Tip</span>The default colour is blue, but this can be changed with a bg-color class.</p>
         <a href="/" class="button-sm">button-sm</a>
         <a href="/" class="button bg-blue-5">button</a>
         <a href="/" class="button-md bg-blue-5">button-md</a>
         <a href="/" class="button-lg bg-blue-5">button-lg</a>
         <hr>
-<h2>Colours</h2>
+<h2 id="colours">Colours</h2>
 <div class="flex">
     <div class="colour bg-blue-5">bg-blue-5</div>
     <div class="colour bg-blue-4">bg-blue-4</div>
@@ -222,7 +299,7 @@ h2 {
     <div class="colour bg-red-1 text-black">bg-red-1</div>
 </div>
 <hr>
-<h2>Tables</h2>
+<h2 id="tables">Tables</h2>
 
 <table>
     <tr>
@@ -278,7 +355,7 @@ h2 {
 <div>&lt;/tr&gt;</div>
 <div>&lt;/table&gt;</div></code></pre>
 <hr>
-<h2>Text</h2>
+<h2 id="text">Text</h2>
 <h3>Headings</h3>
 <p>Text colours and alignment can be applied to headings.</p>
 <h1>H1 Heading</h1>
@@ -292,7 +369,7 @@ h2 {
 </code></pre>
 
 <hr>
-<h3>Text Alignment</h3>
+<h3 id="alignment">Text Alignment</h3>
 <p>text-left</p>
 <p class="text-center">text-center</p>
 <p class="text-right">text-right</p>
@@ -301,7 +378,7 @@ h2 {
 <div>&lt;p class="text-right"&gt;text-right&lt;/p&gt;</div>
 </code></pre>
 <hr>
-<h3>Text Colours</h3>
+<h3 id="text-colours">Text Colours</h3>
 <p class="text-blue">text-blue</p>
 <p class="text-grey">text-grey</p>
 <p class="text-green">text-green</p>
@@ -317,7 +394,7 @@ h2 {
 </code></pre>
 <hr>
 
-<h2>Alerts</h2>
+<h2 id="alerts">Alerts</h2>
 
 <h3>Warning or Validation</h3>
 <div class="box bg-yellow-5"><p>
@@ -340,7 +417,7 @@ h2 {
 
 <hr>
 
-<h2>Tags</h2>
+<h2 id="tags">Tags</h2>
 <span class="tags">Tag</span>
 <span class="tags bg-grey-5 text-white">Tag</span>
 <span class="tags bg-green-5 text-white">Tag</span>
@@ -355,18 +432,41 @@ h2 {
 </code></pre>
 <hr>
 
-<h2>Lists</h2>
+<h2 id="tabs">Tabs</h2>
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+  </div>
+
+  <div id="London" class="tabcontent">
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="Paris" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="Tokyo" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+<hr>
+<h2 id="lists">Lists</h2>
 <p>x</p>
 <ul>
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+    <li>Fifth Item</li>
 </ul>
 <hr>
 
-<h2>Tooltips</h2>
+<h2 id="tooltips">Tooltips</h2>
 <p>x</p>
 <hr>
 </div>
@@ -375,8 +475,8 @@ h2 {
 Built for Aneurin Bevan University Health Board, Designed by <a href="https://jakej.uk">Jake Jenkins</a>
     </div>
 </div>
-
-
+</div>
+<script src="/nhs.js"></script>
 <script src="/public/js/prism.js"></script>
 </body>
 </html>
