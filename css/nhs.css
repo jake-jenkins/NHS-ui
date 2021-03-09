@@ -19,9 +19,8 @@
   padding: 10px;
 }
 
-.banner {
-  padding: 30px 20px 30px 20px;
-  display: flex;
+header {
+  padding: 10px;
 }
 
 main {
@@ -307,4 +306,10 @@ nav a:hover {
 /* Lists */
 ul {
   list-style-image: url("/img/bullet.png");
+}
+
+/* Responsive */
+
+.hide {
+  display: none;
 }

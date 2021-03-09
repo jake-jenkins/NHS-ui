@@ -124,8 +124,8 @@ div.content {
         <a href="#tooltips">Tooltips</a>
       </div>
 <div class="main1">
-    <header id="top" class="bg-blue-4 text-white">
-        <div class="container flex">
+    <header id="top" class="bg-grey-4 text-white">
+        <div class="flex">
         <div class="block logo">
 
         <img src="nhswales-gold.png"alt="SystemName Logo">
@@ -157,53 +157,54 @@ div.content {
     </ul>
 </div>
 
+<p class="text-center"><a class="button-md bg-green-4" onclick="hideCode(code1)">Hide All Code</a></p>
+
 
 <h2 id="boiler-plate">Get Started - Bolier Plate</h2>
 <p>Start with this.  The Boiler plate is the layout for your page.</p>
 
-<pre><code class="language-html"><div>&lt;!DOCTYPE html&gt;</div>
-<div>&lt;html lang="en"&gt;</div>
-<div>&lt;head&gt;</div>
-<div>&lt;meta charset="UTF-8"&gt;</div>
-<div>&lt;meta http-equiv="X-UA-Compatible"content="IE=edge"&gt;</div>
-<div>&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;</div>
-<div>&lt;link rel="stylesheet"href="https://nhs-ui.pages.dev/nhs.css"&gt;</div>
-<div>&lt;title&gt;Home - SystemName&lt;/title&gt;</div>
-<div>&lt;/head&gt;</div>
-<div>&lt;body&gt;</div>
-<div>&nbsp;</div>
-<div>&lt;header class="bg-blue-4 text-white"&gt;</div>
-<div>&lt;div class="container flex"&gt;</div>
-<div>&lt;div class="block logo"&gt;</div>
-<div>&nbsp;</div>
-<div>&lt;img src="nhswales-gold.png"alt="SystemName Logo"&gt;</div>
-<div>&lt;a href="/"&gt;SystemName&lt;/a&gt;</div>
-<div>&lt;/div&gt;</div>
-<div>&nbsp;</div>
-<div>&lt;div class="block search"&gt;</div>
-<div>&lt;input type="search"&gt;</div>
-<div>&lt;a class="button"type="submit"value="Search"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/a&gt;</div>
-<div>&lt;/div&gt;</div>
-<br />
-<div>&lt;nav class="block text-right text-middle"&gt;</div>
-<div>&lt;a href="/"&gt;&lt;i class="fas fa-home"&gt;&lt;/i&gt;&lt;/a&gt;</div>
-<div>&lt;a href="/settings"&gt;&lt;i class="fas fa-cog"&gt;&lt;/i&gt;&lt;/a&gt;</div>
-<div>&lt;a href="/logout"&gt;&lt;i class="fas fa-sign-out-alt"&gt;&lt;/i&gt;&lt;/a&gt;</div>
-<div>&lt;/nav&gt;</div>
-<div>&lt;/div&gt;</div>
-<div>&lt;/header&gt;</div>
-<br />
-<div>&lt;main&gt;</div>
-<div>&lt;h1 class="text-blue"&gt;Title&lt;/h1&gt;</div>
-<div>&lt;p&gt;Main content area&lt;/p&gt;</div>
-<div>&lt;/main&gt;</div>
-<br />
-<div>&lt;footer class="bg-grey-1 text-center"&gt;</div>
-<div>&lt;a href="/"&gt;SystemName&lt;/a&gt; - Footer text</div>
-<div>&lt;/footer&gt;</div>
-<br />
-<div>&lt;/body&gt;</div>
-<div>&lt;/html&gt;</div>
+<pre id="code1"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+	&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+	&lt;meta name="viewport"content="width=device-width, initial-scale=1.0"&gt;
+	&lt;link rel="stylesheet" href="https://nhs-ui.pages.dev/nhs.css"&gt;
+	&lt;title&gt;Home - SystemName&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;header class="bg-blue-4 text-white"&gt;
+	&lt;div class="container flex"&gt;
+	&lt;div class="block logo"&gt;
+	  &lt;img src="nhs-logo.png"alt="SystemName Logo"&gt;
+	  &lt;a href="/"&gt;SystemName&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class="block search"&gt;
+	  &lt;input type="search"&gt;
+	  &lt;a class="button" type="submit" value="Search"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;/div&gt;
+	  &lt;nav class="block text-right text-middle"&gt;
+      &lt;a href="/"&gt;&lt;i class="fas fa-home"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;a href="/settings"&gt;&lt;i class="fas fa-cog"&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;a href="/logout"&gt;&lt;i class="fas fa-sign-out-alt"&gt;&lt;/i&gt;&lt;/a&gt;
+	  &lt;/nav&gt;
+	&lt;/div&gt;
+&lt;/header&gt;
+</p>
+&lt;main&gt;
+	  &lt;h1 class="text-blue"&gt;Title&lt;/h1&gt;
+	    &lt;p&gt;Main content area&lt;/p&gt;
+&lt;/main&gt;
+<p>
+&lt;footer class="bg-grey-1 text-center"&gt;
+	  &lt;a href="/"&gt;SystemName&lt;/a&gt; - Footer text
+&lt;/footer&gt;
+	&lt;script src="https://nhs-ui.pages.dev/nhs.js"&gt;&lt;/script&gt;
+</p>
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 
 <h2>Layout</h2>
@@ -281,6 +282,9 @@ div.content {
     <div class="colour bg-green-2 text-black">bg-green-2</div>
     <div class="colour bg-green-1 text-black">bg-green-1</div>
 </div>
+<pre><code class="language-html">
+  
+</code></pre>
 <h3>Highlights</h3>
 <p>Minimal use recommended.</p>
 <div class="flex">
@@ -298,6 +302,9 @@ div.content {
     <div class="colour bg-red-2 text-black">bg-red-2</div>
     <div class="colour bg-red-1 text-black">bg-red-1</div>
 </div>
+<pre><code class="language-html">
+  
+</code></pre>
 <hr>
 <h2 id="tables">Tables</h2>
 
@@ -454,6 +461,9 @@ div.content {
     <h3>Tokyo</h3>
     <p>Tokyo is the capital of Japan.</p>
   </div>
+  <pre><code class="language-html">
+  
+  </code></pre>
 <hr>
 <h2 id="lists">Lists</h2>
 <p>x</p>
@@ -464,10 +474,16 @@ div.content {
     <li>Fourth Item</li>
     <li>Fifth Item</li>
 </ul>
+<pre><code class="language-html">
+
+</code></pre>
 <hr>
 
 <h2 id="tooltips">Tooltips</h2>
 <p>x</p>
+<pre><code class="language-html">
+  
+</code></pre>
 <hr>
 </div>
 <div class="footer bg-grey-1">
@@ -478,5 +494,12 @@ Built for Aneurin Bevan University Health Board, Designed by <a href="https://ja
 </div>
 <script src="/nhs.js"></script>
 <script src="/public/js/prism.js"></script>
+
+<script>
+  function hideCode(string, codeId) {
+    var code = document.getElementById('{codeId}');
+     code.classList.toggle("hide");
+}
+  </script>
 </body>
 </html>
