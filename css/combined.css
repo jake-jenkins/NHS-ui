@@ -1,4 +1,4 @@
-@import url("https://nhs-ui.pages.dev/css/resets.css");
-@import url("https://nhs-ui.pages.dev/css/icons/css/all.min.css");
-@import url("https://nhs-ui.pages.dev/css/nhs.css");
-@import url("https://nhs-ui.pages.dev/css/nhscolors.css");
+@import url("/css/resets.css");
+@import url("/css/icons/css/all.min.css");
+@import url("/css/nhs.css");
+@import url("/css/nhscolors.css");

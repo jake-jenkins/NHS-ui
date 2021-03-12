@@ -104,6 +104,28 @@ footer {
   font-size: 1.8rem;
 }
 
+/* Menu */
+
+.horizontal {
+  padding: 2px;
+  display: inline-block;
+}
+
+.horizontal > a {
+  color: #fff;
+  padding: 15px 25px 15px 25px;
+  background: #005eb8;
+  margin: 4px 0px 4px 0px;
+  border-radius: 2pt 2pt 2pt 2pt;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.horizontal > a:hover {
+  background: #009639;
+  color: #fff;
+}
+
 /* Dropdown Menu */
 
 /* Tags */
