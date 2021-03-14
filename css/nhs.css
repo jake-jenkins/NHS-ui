@@ -113,7 +113,7 @@ footer {
 
 .horizontal > a {
   color: #fff;
-  padding: 15px 25px 15px 25px;
+  padding: 15px 20px 15px 20px;
   background: #005eb8;
   margin: 4px 0px 4px 0px;
   border-radius: 2pt 2pt 2pt 2pt;
@@ -353,23 +353,23 @@ nav a:hover {
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
+  top: 110%;
   left: 50%;
   margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
 }
 
-.tooltip .tooltiptext::after {
+/* .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
-}
+} */
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
