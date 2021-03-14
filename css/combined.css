@@ -1,4 +1,8 @@
 @import url("/css/resets.css");
 @import url("/css/icons/css/all.min.css");
 @import url("/css/nhs.css");
+
+@import url("/css/tooltips.css");
+@import url("/css/tabs.css");
+
 @import url("/css/nhscolors.css");
