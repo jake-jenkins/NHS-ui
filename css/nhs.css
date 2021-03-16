@@ -294,7 +294,7 @@ nav a:hover {
   flex-wrap: wrap; // make sure it wraps
 }
 .tabs label {
-  order: 1; // Put the labels first
+  order: 1;
   display: block;
   padding: 1rem 2rem;
   margin-right: 0.2rem;
@@ -305,7 +305,7 @@ nav a:hover {
   transition: background ease 0.2s;
 }
 .tabs .tab {
-  order: 99; // Put the tabs last
+  order: 99; 
   flex-grow: 1;
   width: 100%;
   display: none;
@@ -340,7 +340,6 @@ nav a:hover {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
@@ -349,7 +348,7 @@ nav a:hover {
   background-color: #555;
   color: #fff;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 5pt 10pt 5pt 10pt;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
